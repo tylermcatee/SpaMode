@@ -70,6 +70,9 @@
                                           if (APP_DEBUG) {
                                               NSLog(@"Error occured in %@ %@, for command: %d with response: %@ andData: %@ error: %@, %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), command, response, [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding], error, [error userInfo]);
                                           }
+                                          if (completionBlock) {
+                                              completionBlock(data);
+                                          }
                                       } else {
                                           if (APP_DEBUG) {
                                               NSLog(@"Success in %@ %@, for command: %d with response: %@ andData: %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), command, response, [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);

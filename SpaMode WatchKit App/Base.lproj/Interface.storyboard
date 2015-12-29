@@ -10,15 +10,54 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Jets" id="77A-LD-IFF">
-                            <connections>
-                                <action selector="tappedJets" destination="AgC-eL-Hgc" id="oUs-HW-4Au"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Spa Light" id="6vt-TI-9Bg"/>
-                        <button width="1" alignment="left" title="Yard Light" id="gF6-gb-5Cq"/>
-                        <button width="1" alignment="left" title="Waterfall" id="QvT-E2-lO3"/>
+                        <group width="1" alignment="left" id="s4f-nF-vdl">
+                            <items>
+                                <button width="1" alignment="left" title="Jets" id="77A-LD-IFF">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12038112331081081" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="tappedJets" destination="AgC-eL-Hgc" id="oUs-HW-4Au"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="bKy-wN-c61">
+                            <items>
+                                <button width="1" alignment="left" title="Spa Light" id="6vt-TI-9Bg">
+                                    <connections>
+                                        <action selector="tappedSpaLight" destination="AgC-eL-Hgc" id="2xo-NP-e4b"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="l6J-2i-Nsm">
+                            <items>
+                                <button width="1" alignment="left" title="Yard Light" id="gF6-gb-5Cq">
+                                    <connections>
+                                        <action selector="tappedYardLight" destination="AgC-eL-Hgc" id="VcV-i1-Ukt"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="ohC-CR-By0">
+                            <items>
+                                <button width="1" alignment="left" title="Waterfall" id="QvT-E2-lO3">
+                                    <connections>
+                                        <action selector="tappedWaterfall" destination="AgC-eL-Hgc" id="ASk-xX-Nbc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="jetsButton" destination="77A-LD-IFF" id="YrI-2c-xei"/>
+                        <outlet property="jetsGroup" destination="s4f-nF-vdl" id="QnF-9j-Fsv"/>
+                        <outlet property="spaLightButton" destination="6vt-TI-9Bg" id="MgN-nm-eOL"/>
+                        <outlet property="spaLightGroup" destination="bKy-wN-c61" id="LLk-ri-F5H"/>
+                        <outlet property="waterfallButton" destination="QvT-E2-lO3" id="5jV-42-qIj"/>
+                        <outlet property="waterfallGroup" destination="ohC-CR-By0" id="aMm-r2-SQi"/>
+                        <outlet property="yardLightButton" destination="gF6-gb-5Cq" id="ymT-EO-Dg5"/>
+                        <outlet property="yardLightGroup" destination="l6J-2i-Nsm" id="3HV-6o-DL0"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="262" y="331.5"/>
