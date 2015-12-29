@@ -10,8 +10,16 @@
 
 typedef void (^apiRequestComplete)(NSData *);
 
+#define TOGGLE_SPA_LIGHTS 24
+#define TOGGLE_YARD_LIGHTS 25
+#define TOGGLE_JET_PUMP 21
+#define TOGGLE_WATERFALL 22
+#define SPA_MODE_OFF 20
+#define SPA_MODE_ON 128
+
 @interface NetworkManager : NSObject
 
-- (void)toggleSpaModeWithCompletion:(apiRequestComplete)completionBlock;
+- (void)performBasicCommand:(int)command withCompletion:(apiRequestComplete)completionBlock;
+- (void)performBasicCommand:(int)command withText:(NSString *)text withCompletion:(apiRequestComplete)completionBlock;
 
 @end

@@ -25,7 +25,7 @@
 - (IBAction)didTapButton:(id)sender
 {
     NSLog(@"tapped");
-    [self.networkManager toggleSpaModeWithCompletion:nil];
+    [self.networkManager performBasicCommand:TOGGLE_JET_PUMP withCompletion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

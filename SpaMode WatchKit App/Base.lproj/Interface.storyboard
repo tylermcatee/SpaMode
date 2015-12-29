@@ -15,10 +15,13 @@
                                 <action selector="tappedJets" destination="AgC-eL-Hgc" id="oUs-HW-4Au"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Spa Light" id="6vt-TI-9Bg"/>
+                        <button width="1" alignment="left" title="Yard Light" id="gF6-gb-5Cq"/>
+                        <button width="1" alignment="left" title="Waterfall" id="QvT-E2-lO3"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="262" y="331.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

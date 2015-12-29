@@ -36,7 +36,7 @@
 }
 
 - (IBAction)tappedJets {
-    [self.networkManager toggleSpaModeWithCompletion:nil];
+    [self.networkManager performBasicCommand:TOGGLE_JET_PUMP withCompletion:nil];
 }
 
 - (NetworkManager *)networkManager

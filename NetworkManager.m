@@ -33,11 +33,15 @@
     _session = [NSURLSession sessionWithConfiguration:config];
 }
 
-+ (NSMutableURLRequest *)generateSpaGetRequestForCommand:(int)command
++ (NSMutableURLRequest *)generateSpaGetRequestForCommand:(int)command withText:(NSString *)text
 {
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     
     NSString *urlString = [NSString stringWithFormat:@"https://iaqualink.zodiacpoolsystems.com/start/touch/?actionID=NL_ztO8XgpWZbrw&dt=1451349573561&command=%d", command];
+    
+    if (text) {
+        urlString = [NSString stringWithFormat:@"%@&text=%@", urlString, text];
+    }
     
     // Set the post url and headers
     [request setURL:[NSURL URLWithString:urlString]];
@@ -49,21 +53,26 @@
     return request;
 }
 
-- (void)toggleSpaModeWithCompletion:(apiRequestComplete)completionBlock
+- (void)performBasicCommand:(int)command withCompletion:(apiRequestComplete)completionBlock
+{
+    [self performBasicCommand:command withText:nil withCompletion:completionBlock];
+}
+
+- (void)performBasicCommand:(int)command withText:(NSString *)text withCompletion:(apiRequestComplete)completionBlock
 {
     
-    NSMutableURLRequest *request = [[self class] generateSpaGetRequestForCommand:21];
+    NSMutableURLRequest *request = [[self class] generateSpaGetRequestForCommand:command withText:text];
     
     NSURLSessionDataTask *task = [self.session dataTaskWithRequest:request
                                                  completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
                                   {
                                       if (error) {
                                           if (APP_DEBUG) {
-                                              NSLog(@"Error occured requesting all customers with response: %@ andData: %@ error: %@, %@", response, [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding], error, [error userInfo]);
+                                              NSLog(@"Error occured in %@ %@, for command: %d with response: %@ andData: %@ error: %@, %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), command, response, [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding], error, [error userInfo]);
                                           }
                                       } else {
                                           if (APP_DEBUG) {
-                                              NSLog(@"Success requesting requesting all customers with response: %@ andData: %@", response, [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+                                              NSLog(@"Success in %@ %@, for command: %d with response: %@ andData: %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), command, response, [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
                                           }
                                           if (completionBlock) {
                                               completionBlock(data);
