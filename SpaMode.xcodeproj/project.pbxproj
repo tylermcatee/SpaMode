@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11B0BA511C32140C006EA607 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BA501C32140C006EA607 /* main.m */; };
+		11B0BA541C32140C006EA607 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BA531C32140C006EA607 /* AppDelegate.m */; };
+		11B0BA571C32140C006EA607 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BA561C32140C006EA607 /* ViewController.m */; };
+		11B0BA5A1C32140C006EA607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B0BA581C32140C006EA607 /* Main.storyboard */; };
+		11B0BA5C1C32140C006EA607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B0BA5B1C32140C006EA607 /* Assets.xcassets */; };
+		11B0BA5F1C32140C006EA607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B0BA5D1C32140C006EA607 /* LaunchScreen.storyboard */; };
+		11B0BA6A1C32140D006EA607 /* SpaModeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BA691C32140D006EA607 /* SpaModeTests.m */; };
+		11B0BA751C32140D006EA607 /* SpaModeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BA741C32140D006EA607 /* SpaModeUITests.m */; };
+		11B0BA7A1C32140D006EA607 /* SpaMode WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 11B0BA791C32140D006EA607 /* SpaMode WatchKit App.app */; };
+		11B0BA801C32140D006EA607 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B0BA7E1C32140D006EA607 /* Interface.storyboard */; };
+		11B0BA821C32140D006EA607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B0BA811C32140D006EA607 /* Assets.xcassets */; };
+		11B0BA891C32140D006EA607 /* SpaMode WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11B0BA881C32140D006EA607 /* SpaMode WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		11B0BA911C32140D006EA607 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BA901C32140D006EA607 /* InterfaceController.m */; };
+		11B0BA941C32140D006EA607 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BA931C32140D006EA607 /* ExtensionDelegate.m */; };
+		11B0BA971C32140D006EA607 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BA961C32140D006EA607 /* NotificationController.m */; };
+		11B0BA991C32140D006EA607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B0BA981C32140D006EA607 /* Assets.xcassets */; };
+		11B0BAB11C3214BF006EA607 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BAB01C3214BF006EA607 /* NetworkManager.m */; };
+		11B0BAB21C321C05006EA607 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BAB01C3214BF006EA607 /* NetworkManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11B0BA661C32140D006EA607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11B0BA441C32140C006EA607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11B0BA4B1C32140C006EA607;
+			remoteInfo = SpaMode;
+		};
+		11B0BA711C32140D006EA607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11B0BA441C32140C006EA607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11B0BA4B1C32140C006EA607;
+			remoteInfo = SpaMode;
+		};
+		11B0BA7B1C32140D006EA607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11B0BA441C32140C006EA607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11B0BA781C32140D006EA607;
+			remoteInfo = "SpaMode WatchKit App";
+		};
+		11B0BA8A1C32140D006EA607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11B0BA441C32140C006EA607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11B0BA871C32140D006EA607;
+			remoteInfo = "SpaMode WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11B0BAA01C32140D006EA607 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				11B0BA891C32140D006EA607 /* SpaMode WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BAA41C32140D006EA607 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				11B0BA7A1C32140D006EA607 /* SpaMode WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1184B2211C332A9000CDC53E /* PrivateConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateConstants.h; sourceTree = "<group>"; };
+		11B0BA4C1C32140C006EA607 /* SpaMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B0BA501C32140C006EA607 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11B0BA521C32140C006EA607 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11B0BA531C32140C006EA607 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11B0BA551C32140C006EA607 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		11B0BA561C32140C006EA607 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		11B0BA591C32140C006EA607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11B0BA5B1C32140C006EA607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11B0BA5E1C32140C006EA607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11B0BA601C32140C006EA607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B0BA651C32140D006EA607 /* SpaModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaModeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B0BA691C32140D006EA607 /* SpaModeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaModeTests.m; sourceTree = "<group>"; };
+		11B0BA6B1C32140D006EA607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B0BA701C32140D006EA607 /* SpaModeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaModeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B0BA741C32140D006EA607 /* SpaModeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaModeUITests.m; sourceTree = "<group>"; };
+		11B0BA761C32140D006EA607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B0BA791C32140D006EA607 /* SpaMode WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaMode WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B0BA7F1C32140D006EA607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		11B0BA811C32140D006EA607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11B0BA831C32140D006EA607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B0BA881C32140D006EA607 /* SpaMode WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SpaMode WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B0BA8E1C32140D006EA607 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		11B0BA8F1C32140D006EA607 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		11B0BA901C32140D006EA607 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		11B0BA921C32140D006EA607 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		11B0BA931C32140D006EA607 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		11B0BA951C32140D006EA607 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		11B0BA961C32140D006EA607 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		11B0BA981C32140D006EA607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11B0BA9A1C32140D006EA607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B0BAAF1C3214BF006EA607 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		11B0BAB01C3214BF006EA607 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11B0BA491C32140C006EA607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA621C32140D006EA607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA6D1C32140D006EA607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA851C32140D006EA607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11B0BA431C32140C006EA607 = {
+			isa = PBXGroup;
+			children = (
+				11B0BAAE1C32143C006EA607 /* iOS stuff */,
+				11B0BA4E1C32140C006EA607 /* SpaMode */,
+				11B0BA681C32140D006EA607 /* SpaModeTests */,
+				11B0BA731C32140D006EA607 /* SpaModeUITests */,
+				11B0BA7D1C32140D006EA607 /* SpaMode WatchKit App */,
+				11B0BA8C1C32140D006EA607 /* SpaMode WatchKit Extension */,
+				11B0BA4D1C32140C006EA607 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11B0BA4D1C32140C006EA607 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11B0BA4C1C32140C006EA607 /* SpaMode.app */,
+				11B0BA651C32140D006EA607 /* SpaModeTests.xctest */,
+				11B0BA701C32140D006EA607 /* SpaModeUITests.xctest */,
+				11B0BA791C32140D006EA607 /* SpaMode WatchKit App.app */,
+				11B0BA881C32140D006EA607 /* SpaMode WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11B0BA4E1C32140C006EA607 /* SpaMode */ = {
+			isa = PBXGroup;
+			children = (
+				11B0BA521C32140C006EA607 /* AppDelegate.h */,
+				11B0BA531C32140C006EA607 /* AppDelegate.m */,
+				11B0BA551C32140C006EA607 /* ViewController.h */,
+				11B0BA561C32140C006EA607 /* ViewController.m */,
+				11B0BA581C32140C006EA607 /* Main.storyboard */,
+				11B0BA5B1C32140C006EA607 /* Assets.xcassets */,
+				11B0BA5D1C32140C006EA607 /* LaunchScreen.storyboard */,
+				11B0BA601C32140C006EA607 /* Info.plist */,
+				11B0BA4F1C32140C006EA607 /* Supporting Files */,
+			);
+			path = SpaMode;
+			sourceTree = "<group>";
+		};
+		11B0BA4F1C32140C006EA607 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11B0BA501C32140C006EA607 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11B0BA681C32140D006EA607 /* SpaModeTests */ = {
+			isa = PBXGroup;
+			children = (
+				11B0BA691C32140D006EA607 /* SpaModeTests.m */,
+				11B0BA6B1C32140D006EA607 /* Info.plist */,
+			);
+			path = SpaModeTests;
+			sourceTree = "<group>";
+		};
+		11B0BA731C32140D006EA607 /* SpaModeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11B0BA741C32140D006EA607 /* SpaModeUITests.m */,
+				11B0BA761C32140D006EA607 /* Info.plist */,
+			);
+			path = SpaModeUITests;
+			sourceTree = "<group>";
+		};
+		11B0BA7D1C32140D006EA607 /* SpaMode WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				11B0BA7E1C32140D006EA607 /* Interface.storyboard */,
+				11B0BA811C32140D006EA607 /* Assets.xcassets */,
+				11B0BA831C32140D006EA607 /* Info.plist */,
+			);
+			path = "SpaMode WatchKit App";
+			sourceTree = "<group>";
+		};
+		11B0BA8C1C32140D006EA607 /* SpaMode WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				11B0BA8F1C32140D006EA607 /* InterfaceController.h */,
+				11B0BA901C32140D006EA607 /* InterfaceController.m */,
+				11B0BA921C32140D006EA607 /* ExtensionDelegate.h */,
+				11B0BA931C32140D006EA607 /* ExtensionDelegate.m */,
+				11B0BA951C32140D006EA607 /* NotificationController.h */,
+				11B0BA961C32140D006EA607 /* NotificationController.m */,
+				11B0BA981C32140D006EA607 /* Assets.xcassets */,
+				11B0BA9A1C32140D006EA607 /* Info.plist */,
+				11B0BA8D1C32140D006EA607 /* Supporting Files */,
+			);
+			path = "SpaMode WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		11B0BA8D1C32140D006EA607 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11B0BA8E1C32140D006EA607 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11B0BAAE1C32143C006EA607 /* iOS stuff */ = {
+			isa = PBXGroup;
+			children = (
+				11B0BAAF1C3214BF006EA607 /* NetworkManager.h */,
+				11B0BAB01C3214BF006EA607 /* NetworkManager.m */,
+				1184B2211C332A9000CDC53E /* PrivateConstants.h */,
+			);
+			name = "iOS stuff";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11B0BA4B1C32140C006EA607 /* SpaMode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B0BAA51C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaMode" */;
+			buildPhases = (
+				11B0BA481C32140C006EA607 /* Sources */,
+				11B0BA491C32140C006EA607 /* Frameworks */,
+				11B0BA4A1C32140C006EA607 /* Resources */,
+				11B0BAA41C32140D006EA607 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11B0BA7C1C32140D006EA607 /* PBXTargetDependency */,
+			);
+			name = SpaMode;
+			productName = SpaMode;
+			productReference = 11B0BA4C1C32140C006EA607 /* SpaMode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11B0BA641C32140D006EA607 /* SpaModeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B0BAA81C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaModeTests" */;
+			buildPhases = (
+				11B0BA611C32140D006EA607 /* Sources */,
+				11B0BA621C32140D006EA607 /* Frameworks */,
+				11B0BA631C32140D006EA607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11B0BA671C32140D006EA607 /* PBXTargetDependency */,
+			);
+			name = SpaModeTests;
+			productName = SpaModeTests;
+			productReference = 11B0BA651C32140D006EA607 /* SpaModeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11B0BA6F1C32140D006EA607 /* SpaModeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B0BAAB1C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaModeUITests" */;
+			buildPhases = (
+				11B0BA6C1C32140D006EA607 /* Sources */,
+				11B0BA6D1C32140D006EA607 /* Frameworks */,
+				11B0BA6E1C32140D006EA607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11B0BA721C32140D006EA607 /* PBXTargetDependency */,
+			);
+			name = SpaModeUITests;
+			productName = SpaModeUITests;
+			productReference = 11B0BA701C32140D006EA607 /* SpaModeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		11B0BA781C32140D006EA607 /* SpaMode WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B0BAA11C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaMode WatchKit App" */;
+			buildPhases = (
+				11B0BA771C32140D006EA607 /* Resources */,
+				11B0BAA01C32140D006EA607 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11B0BA8B1C32140D006EA607 /* PBXTargetDependency */,
+			);
+			name = "SpaMode WatchKit App";
+			productName = "SpaMode WatchKit App";
+			productReference = 11B0BA791C32140D006EA607 /* SpaMode WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		11B0BA871C32140D006EA607 /* SpaMode WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B0BA9D1C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaMode WatchKit Extension" */;
+			buildPhases = (
+				11B0BA841C32140D006EA607 /* Sources */,
+				11B0BA851C32140D006EA607 /* Frameworks */,
+				11B0BA861C32140D006EA607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpaMode WatchKit Extension";
+			productName = "SpaMode WatchKit Extension";
+			productReference = 11B0BA881C32140D006EA607 /* SpaMode WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11B0BA441C32140C006EA607 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Green;
+				TargetAttributes = {
+					11B0BA4B1C32140C006EA607 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3UHXHK3AGY;
+					};
+					11B0BA641C32140D006EA607 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 11B0BA4B1C32140C006EA607;
+					};
+					11B0BA6F1C32140D006EA607 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 11B0BA4B1C32140C006EA607;
+					};
+					11B0BA781C32140D006EA607 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3UHXHK3AGY;
+					};
+					11B0BA871C32140D006EA607 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3UHXHK3AGY;
+					};
+				};
+			};
+			buildConfigurationList = 11B0BA471C32140C006EA607 /* Build configuration list for PBXProject "SpaMode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11B0BA431C32140C006EA607;
+			productRefGroup = 11B0BA4D1C32140C006EA607 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11B0BA4B1C32140C006EA607 /* SpaMode */,
+				11B0BA641C32140D006EA607 /* SpaModeTests */,
+				11B0BA6F1C32140D006EA607 /* SpaModeUITests */,
+				11B0BA781C32140D006EA607 /* SpaMode WatchKit App */,
+				11B0BA871C32140D006EA607 /* SpaMode WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11B0BA4A1C32140C006EA607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B0BA5F1C32140C006EA607 /* LaunchScreen.storyboard in Resources */,
+				11B0BA5C1C32140C006EA607 /* Assets.xcassets in Resources */,
+				11B0BA5A1C32140C006EA607 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA631C32140D006EA607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA6E1C32140D006EA607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA771C32140D006EA607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B0BA821C32140D006EA607 /* Assets.xcassets in Resources */,
+				11B0BA801C32140D006EA607 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA861C32140D006EA607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B0BA991C32140D006EA607 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11B0BA481C32140C006EA607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B0BAB11C3214BF006EA607 /* NetworkManager.m in Sources */,
+				11B0BA571C32140C006EA607 /* ViewController.m in Sources */,
+				11B0BA541C32140C006EA607 /* AppDelegate.m in Sources */,
+				11B0BA511C32140C006EA607 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA611C32140D006EA607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B0BA6A1C32140D006EA607 /* SpaModeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA6C1C32140D006EA607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B0BA751C32140D006EA607 /* SpaModeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B0BA841C32140D006EA607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B0BAB21C321C05006EA607 /* NetworkManager.m in Sources */,
+				11B0BA941C32140D006EA607 /* ExtensionDelegate.m in Sources */,
+				11B0BA911C32140D006EA607 /* InterfaceController.m in Sources */,
+				11B0BA971C32140D006EA607 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11B0BA671C32140D006EA607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11B0BA4B1C32140C006EA607 /* SpaMode */;
+			targetProxy = 11B0BA661C32140D006EA607 /* PBXContainerItemProxy */;
+		};
+		11B0BA721C32140D006EA607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11B0BA4B1C32140C006EA607 /* SpaMode */;
+			targetProxy = 11B0BA711C32140D006EA607 /* PBXContainerItemProxy */;
+		};
+		11B0BA7C1C32140D006EA607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11B0BA781C32140D006EA607 /* SpaMode WatchKit App */;
+			targetProxy = 11B0BA7B1C32140D006EA607 /* PBXContainerItemProxy */;
+		};
+		11B0BA8B1C32140D006EA607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11B0BA871C32140D006EA607 /* SpaMode WatchKit Extension */;
+			targetProxy = 11B0BA8A1C32140D006EA607 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11B0BA581C32140C006EA607 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11B0BA591C32140C006EA607 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11B0BA5D1C32140C006EA607 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11B0BA5E1C32140C006EA607 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		11B0BA7E1C32140D006EA607 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11B0BA7F1C32140D006EA607 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11B0BA9B1C32140D006EA607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11B0BA9C1C32140D006EA607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11B0BA9E1C32140D006EA607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "SpaMode WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaMode.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		11B0BA9F1C32140D006EA607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "SpaMode WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaMode.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		11B0BAA21C32140D006EA607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = SpaMode_WatchKit_Extension;
+				INFOPLIST_FILE = "SpaMode WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaMode.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		11B0BAA31C32140D006EA607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = SpaMode_WatchKit_Extension;
+				INFOPLIST_FILE = "SpaMode WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaMode.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		11B0BAA61C32140D006EA607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SpaMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		11B0BAA71C32140D006EA607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SpaMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		11B0BAA91C32140D006EA607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpaModeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaModeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaMode.app/SpaMode";
+			};
+			name = Debug;
+		};
+		11B0BAAA1C32140D006EA607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpaModeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaModeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaMode.app/SpaMode";
+			};
+			name = Release;
+		};
+		11B0BAAC1C32140D006EA607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SpaModeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaModeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpaMode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		11B0BAAD1C32140D006EA607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SpaModeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Green.SpaModeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpaMode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11B0BA471C32140C006EA607 /* Build configuration list for PBXProject "SpaMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B0BA9B1C32140D006EA607 /* Debug */,
+				11B0BA9C1C32140D006EA607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B0BA9D1C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaMode WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B0BA9E1C32140D006EA607 /* Debug */,
+				11B0BA9F1C32140D006EA607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B0BAA11C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaMode WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B0BAA21C32140D006EA607 /* Debug */,
+				11B0BAA31C32140D006EA607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B0BAA51C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B0BAA61C32140D006EA607 /* Debug */,
+				11B0BAA71C32140D006EA607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B0BAA81C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaModeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B0BAA91C32140D006EA607 /* Debug */,
+				11B0BAAA1C32140D006EA607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B0BAAB1C32140D006EA607 /* Build configuration list for PBXNativeTarget "SpaModeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B0BAAC1C32140D006EA607 /* Debug */,
+				11B0BAAD1C32140D006EA607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11B0BA441C32140C006EA607 /* Project object */;
+}
